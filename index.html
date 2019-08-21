@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Phạm Hoài Thu" content="">
+	<meta name="keywords" content="tin tức, trang chủ">
+	<link rel="shortcut icon" href="img/icon_mnuL.png">
+	<title>Aki Chan</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<!-- font -->
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+<body>
+	<!-- phan 1 -->
+	<section class="top-heder">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">AKI CHAN</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="yeubanthan1.html">Yêu bản thân</a></li>
+							<li><a href="#">cuộc sống</a></li>
+							<li><a href="#">Học tập</a></li>
+						</ul>
+					</li>
+					<li><a href="who.html">Aki là ai?</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://www.facebook.com/Aki-Chan-2801786076562472/?modal=admin_todo_tour"><span class="glyphicon glyphicon-heart"></span> Facebook</a></li>
+					<li><a href="https://mail.google.com/mail/u/0/#inbox"><span class="glyphicon glyphicon-user"></span> Gmail</a></li>
+				</ul>
+			</div>
+		</nav>
+
+	</section>
+
+
+
+	<!-- phan 2 -->
+	<section class="phan2">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<div class="img-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+	</section>
+	<!-- phan 3 -->
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+					<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<div class="w3-content w3-display-container">
+						<img class="mySlides" src="img/slide1.jpg" style="width:100%">
+						<img class="mySlides" src="img/slide2.jpg" style="width:100%">
+						<img class="mySlides" src="img/slide3.jpg" style="width:100%">
+						
+						<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+						<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+					</div>
+
+					<script>
+						var slideIndex = 1;
+						showDivs(slideIndex);
+
+						function plusDivs(n) {
+							showDivs(slideIndex += n);
+						}
+
+						function showDivs(n) {
+							var i;
+							var x = document.getElementsByClassName("mySlides");
+							if (n > x.length) {slideIndex = 1}
+								if (n < 1) {slideIndex = x.length}
+									for (i = 0; i < x.length; i++) {
+										x[i].style.display = "none";  
+									}
+									x[slideIndex-1].style.display = "block";  
+								}
+							</script>
+						</div>
+						<div class="col-md-1"></div>
+						<div class="col-md-4">
+							<div class="right">
+								<hr>
+								<h4>About me!</h4>
+								<hr>
+
+								<div class="noidung">
+									<img src="img/noidung1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- footer -->
+			<footer class="footer">
+				<h4>Aki Chan chúc bạn thành công</h4>
+
+			</footer>
+			<!-- nhúng -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		</body>
+		</html>
